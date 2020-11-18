@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Lejour | Dashboard</title>
+        <script src='../js/Chart.js'></script>
+        <script src='../js/Chart.min.js'></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <link rel='stylesheet' href='../css/reset.css'>
+        <link rel='stylesheet' href='../css/Chart.css'>
+        <link rel='stylesheet' href='../css/dashboard.css'>
+        
+    </head>
+    <body>
+        <div class="title">
+            <img alt="lejour" src="../assets/lejour.png">
+            <div><h1>Dashboard</h1></div>
+        </div>
+        <div class="main-container">
+            <div class="menu">
+                <a class="subtitle" href="dashboard.html">Casamentos</a>
+                <a class="subtitle" href="periodWeddings.html">Casamentos por período</a>
+                <a class="subtitle" href="userRegistrations.html">Usuários cadastrados</a>
+                <a class="subtitle" href="invoiceByPeriod.html">Fatura por período</a>
+                <a class="subtitle" href="scheduling.html">Agendamentos por período</a>
+            </div>
+            <div class="subtitle"><h2>Estilos de casamento</h2></div>
+            <div class="wedding-style">
+                <div class="wedding-style-subcontainer">
+                    <h3>Volume</h3>
+                    <canvas id='doughnut-qty'></canvas> 
+                </div>
+                <div class="wedding-style-subcontainer">
+                    <h3>Orçamento</h3>
+                    <canvas id='doughnut-budget'></canvas>
+                </div>
+            </div>
+            <div class="wedding-style-budget">
+                <div class="subtitle"><h2>Estilos de casamento x Ano</h2></div>
+                <h3>Volume</h3>
+                <span>* Dados com data inválida ou nula não contabilizados.</span>
+                <canvas id='bar-qty'></canvas>
+                <h3>Orçamento</h3>
+                <span>* Dados com data inválida ou nula não contabilizados.</span>
+                <canvas id='bar-budget'></canvas>
+            </div>
+            
+        </div>
+        <script src='../js/jQuery.js'></script>
+        <script src='../js/dashboard.js'></script>
+    </body>
+</html>

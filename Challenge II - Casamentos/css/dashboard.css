@@ -1,0 +1,163 @@
+:root {
+    --amarelo: #FFB854;
+    --laranja: #EA8079;
+    --pink: #DB5D79;
+    --azul: #84B8E2;
+    --verde: #68BFB7;
+    --goiaba: #E2645A;
+    --cinza-escuro: #585858;
+    --cinza-claro: #9B9A9A;
+
+    --shadow1: var(--cinza-claro) 1px 1px 15px;
+
+    --font: 'Lato', sans-serif;
+}
+
+div.title {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    box-shadow: var(--shadow1);
+}
+div.title div {
+    width: 100%;
+}
+
+div.title h1 {
+    margin: 50px;
+    font-size: 2.2em;
+    color: var(--goiaba);
+    font-family: var(--font);
+    font-weight: 400;
+}
+
+div.menu {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+a.subtitle  {
+    text-decoration: none;
+    background-color: var(--goiaba);
+    margin: 5px;
+    padding: 15px 40px;
+    border-radius: 15px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    box-shadow: var(--shadow1);
+}
+a.subtitle:hover {
+    transform: scale(0.9);
+    opacity: 0.8;
+    transition: all ease 0.2s;
+}
+
+a.subtitle:active {
+    transform: scale(1);
+    opacity: 1;
+    transition: all ease 0.2s;
+}
+
+div.main-container {
+    margin: 170px 50px 50px 50px;
+   
+}
+
+div.style-powerbi {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+div.subtitle {
+    background-color: var(--goiaba);
+    margin-top: 20px;
+    padding: 15px 40px;
+    border-radius: 15px;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 1.5em;
+    color: white;
+    box-shadow: var(--shadow1);
+}
+
+div.wedding-style {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.wedding-style-subcontainer {
+    width: 50%;
+}
+
+h3 {
+    font-size: 1.1em;
+    font-family: var(--font);
+    color: var(--cinza-escuro);
+    margin: 20px 0;
+    border-left: solid 2px var(--verde);
+    padding: 10px;
+}
+
+span {
+    font-family: var(--font);
+    font-weight: 300;
+    font-size: 0.8em;
+    color: var(--cinza-escuro);
+}
+
+@media screen and (max-width: 768px){
+    div.title img{
+        width: 20%;
+        height: 40%;
+    }
+    div.wedding-style {
+        display: block;
+    }
+    div.menu {
+        display: grid;
+        grid-auto-columns: auto;
+    }
+
+    div.subtitle {
+       
+        background-color: white;
+
+    }
+
+    div.subtitle h2{
+        background-color: white;
+        color: var(--goiaba);
+        text-align: center;
+      
+
+    }
+
+    a.subtitle  {
+        height: 20px;
+        width: 160px;
+        text-decoration: none;
+        background-color: var(--goiaba);
+        margin: 5px;
+        padding: 15px 40px 30px;
+        border-radius: 15px;
+        font-family: var(--font);
+        font-weight: 400;
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        box-shadow: var(--shadow1);
+        
+    }
+
+    
+
+    
+}
